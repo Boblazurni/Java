@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
-
 public class Task4 {
     public static void main(String[] args) {
+        System.out.print("Input length of your array: ");
         int min = 1, max = 1, sum = 0;
         Scanner scanner = new Scanner(System.in);
         int length = scanner.nextInt();
@@ -10,6 +10,7 @@ public class Task4 {
         int i = 0;
 
         while (i < length) {
+            System.out.print("Input " + (i+1) + " number: ");
             arr[i] = scanner.nextInt();
             sum += arr[i];
             if (i == 0) { max = arr[0]; min = arr[0]; }
