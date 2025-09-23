@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Task1 {
+public class Task3{
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int sum = 0;
@@ -11,6 +11,7 @@ public class Task1 {
 //ввод массива и подсчет суммы
         for (int i = 0; i < length; i++) arr[i] = scan.nextInt();
         for (int i = 0; i < length; i++) sum += arr[i];
-        System.out.println(sum);
+        System.out.println("Sum of numbers: " + sum);
+        System.out.println("Mean of numbers: " + sum/length);
     }
 }
