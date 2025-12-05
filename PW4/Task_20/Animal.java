@@ -1,6 +1,6 @@
 package PW4.Task_20;
 
-public class Animal {
+public class Animal implements Comparable<Animal> {
     private final String name;
     private final int age;
     
@@ -15,5 +15,9 @@ public class Animal {
     @Override
     public String toString() {
         return name + " (возраст: " + age + ")";
+    }
+
+    public int compareTo(Animal a){
+        return this.age - a.age;
     }
 }
